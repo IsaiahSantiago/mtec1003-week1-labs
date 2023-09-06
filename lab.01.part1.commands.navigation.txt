@@ -21,6 +21,71 @@ Desktop			Movies			Zotero
 Documents		Music
 Downloads		Pictures
 
+AppData
+
+'Application Data'
+
+ Contacts
+
+ Cookies
+
+'Creative Cloud Files'
+
+'Creative Cloud Files isaiahsantiago456@gmail.com 2319c1b5cc7f8f4891213122281b509527026653b69ea6b30cedd588228fd26c'
+
+ Desktop
+
+ Documents
+
+ Downloads
+
+ Favorites
+
+ Links
+
+'Local Settings'
+
+ Music
+
+'My Documents'
+
+ NTUSER.DAT
+
+ NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TM.blf
+
+ NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TMContainer00000000000000000001.regtrans-ms
+
+ NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TMContainer00000000000000000002.regtrans-ms
+
+ NetHood
+
+ OneDrive
+
+ Pictures
+
+ PrintHood
+
+ Recent
+
+'Saved Games'
+
+ Searches
+
+ SendTo
+
+'Start Menu'
+
+ Templates
+
+ Videos
+
+ ansel
+
+ ntuser.dat.LOG1
+
+ ntuser.dat.LOG2
+
+ ntuser.ini
 
 
 ==========
@@ -31,8 +96,12 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
-total 0
-drwxr-xr-x   4 louisgoldford  staff   128 Jun 10 12:12 CU
+h 197121    0 Jul 19 17:11  Image-Line/
+drwxr-xr-x 1 Isaiah 197121    0 Jul 15 22:02  Klei/
+drwxr-xr-x 1 Isaiah 197121    0 Aug 25 16:02  LetsView/
+
+
+
 
 
 
@@ -44,8 +113,10 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
-.				Finale.plugins
-..				Max 8
+./                                           Image-Line/    'My Videos'@
+ ../                                          Klei/           SEGA/
+
+
 
 
 
@@ -58,7 +129,8 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
-ls: doesnotexist: No such file or directory
+ls: cannot access 'Doesnotexist': No such file or directory
+
 
 
 
@@ -66,24 +138,25 @@ ls: doesnotexist: No such file or directory
 5.  What key do I press to go to the previous command?
 ----------
 
-up arrow key 
-
+You press the UP KEY, literally press up, the up arrow
+And remember to press down to see more current commands
 
 
 ==========
 6.  Name two flags/options that we used in this exercise.
 ----------
 
--a (listed all the hidden stuff)
--l (detailed view with metadata)
+ls -a
+ls -l
 
-
+Both of which are unique being that A shows hidden files and L shows all metadata (What's metadata?)
 
 ==========
 7.  What was the main command that we used throughout this exercise?
 ----------
 
-ls
+ls (All In lower case)
+
 
 
 
@@ -91,9 +164,9 @@ ls
 8.  What's one an argument that we've so far passed to a command?
 ----------
 
-Documents 
+Documents
 
-
+Remember the Capital D in there or else it won't work
 
 
 ==========
@@ -104,8 +177,9 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
--bash: foo: command not found
+bash: foo: command not found
 
+literally nothing
 
 ==========
 10.  Type:
@@ -115,7 +189,8 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
--bash: foo: command not found
+bash: foo: command not found
+
 
 
 
@@ -128,15 +203,15 @@ $ ls -a Desktop
 Identify the command, flag, argument, and prompt:
 ----------
 
-command ls
-flag -a 
-argument Desktop
-prompt $
+Command --> ls
 
+Flag --> -a
 
+Arguement --> Desktop
 
+Prompt --> The Dollar Sign $ , Could also be % percent
 
-
+ 
 Lab 1 / Part 2 - Navigating the File System
 ==========
 Follow the instructions line-by-line.
@@ -150,6 +225,7 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
 
+mkdir mtec1003
 
 
 
@@ -157,6 +233,7 @@ Follow the instructions line-by-line.
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
 
+cd mtec1003
 
 
 
@@ -173,6 +250,7 @@ If it doesn't ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -186,6 +264,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+animals/
 
 
 
@@ -199,6 +278,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+animals/  food/
 
 
 
@@ -214,6 +294,7 @@ Copy and paste the output below.
 
 animals	foo	food
 
+animals/  foo/  food/
 
 
 
@@ -227,6 +308,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 
 
@@ -240,6 +322,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar
 
 
 
@@ -253,6 +336,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 
 
@@ -266,6 +350,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -279,7 +364,16 @@ $ ls -l
 Copy and paste the first 3 lines from the output into the space below.
 ----------
 
+first ls -1:
 
+animals/
+foo/
+food/
+
+Next  ls -1 AFTER typing rmdir animals:
+
+foo/
+food/
 
 
 
@@ -292,6 +386,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+/c/Users/Isaiah
 
 
 
@@ -305,7 +400,11 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+cd /Volumes
+bash: cd: /Volumes: No such file or directory
 
+then with PWD:
+/c/Users/Isaiah
 
 
 
@@ -319,7 +418,12 @@ Copy and paste the output into the space below.
 ----------
 
 
+$ cd /unknown_folder
+bash: cd: /unknown_folder: No such file or directory
 
+and then
+
+/c/Users/Isaiah
 
 
 ==========
@@ -331,6 +435,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -344,6 +449,7 @@ Copy and paste the output into the space below.
 ----------
 
 
+Isaiah-Laptop
 
 
 
@@ -351,6 +457,7 @@ Copy and paste the output into the space below.
 28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
+cd ~/mtec1003
 
 
 
@@ -363,7 +470,7 @@ Otherwise skip this question/step!
 ----------
 
 
-
+Done! ❤️
 
 
 ==========
@@ -379,9 +486,13 @@ lemon
 Write the one command you used below:
 ----------
 
+mkdir pineapple
 
+$ mkdir orange
 
+$ mkdir strawberry
 
+$ mkdir lemon
 
 ==========
 31. Make another directory called aardvark.
@@ -389,8 +500,7 @@ Write the one command you used below:
 Write the command you used to create the directory below:
 ----------
 
-
-
+mkdir aardvark
 
 
 ==========
@@ -399,8 +509,10 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
+aardvark/  foo/  food/  lemon/  orange/  pineapple/  strawberry/
 
-
+and the date for the directory is (Based on ls -t)
+aardvark/  lemon/  strawberry/  orange/  pineapple/  foo/  food/
 
 
 ==========
@@ -413,8 +525,9 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
+mkdir -p dir1/dir2/dir3
 
-
+mkdir -p foo/bar/baz
 
 
 ==========
@@ -422,9 +535,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
-
-
+cd ~/baz
 
 
 ==========
@@ -433,7 +544,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+$ cd ~/foo
 
 
 
@@ -442,7 +553,7 @@ What command did you use?
 ----------
 
 
-
+rmdir
 
 
 ==========
@@ -450,7 +561,7 @@ What command did you use?
 ----------
 
 
-
+pwd
 
 
 ==========
@@ -458,13 +569,20 @@ What command did you use?
 ----------
 
 
-
+-a
 
 
 ==========
 39. What's the shortcut for home directory?
 ----------
 
+
+/Users/username
+$ cd ~/Users/username
+$ cd ~/Users/home
+
+But
+cd /usr/ worked
 
 
 
@@ -473,7 +591,7 @@ What command did you use?
 40. What's a pathname?
 ----------
 
-
+The name of a File in the system
 
 
 
@@ -482,10 +600,12 @@ What command did you use?
 ----------
 
 
-
+Like in cd or change Directory
+Directory is the current path or file you are located in 
 
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
 
+Absolute paths originate from the very beginning of the computer's systems, normally starting from USER.
