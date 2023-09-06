@@ -15,18 +15,21 @@ Feel free to use your workstation to test your answers to the questions that don
 1. Write the command that you would use to change to the root directory.
 ----------
 
+$ cd /usr/
 
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
 
+cd ~
 
 
 ==========
 3. What's the absolute path to your Desktop directory?
 ----------
 
+cd ~/Desktop
 
 
 ==========
@@ -34,6 +37,7 @@ Feel free to use your workstation to test your answers to the questions that don
 called stuff without changing your directory?  Write your command below.
 ----------
 
+mkdir stuff
 
 
 
@@ -41,12 +45,15 @@ called stuff without changing your directory?  Write your command below.
 5. If you're in your Desktop directory, how would you change to two directories right above it (again, this should be /Users) using a relative path?  Write your command below.
 ----------
 
+$ cd ../../..
 
 
 ==========
 6. What's the shortcut for changing to the directory that you were just previously in?  For example, if I were in /Volumes... and I changed to /Users/professor/Desktop, what's a quick way of changing to /Volumes without writing something like cd /Volumes?
 ----------
 
+cd -
+The dash is like an undo
 
 
 ==========
@@ -54,6 +61,7 @@ called stuff without changing your directory?  Write your command below.
 for all files on your Desktop — if you're currently in your home directory?  Write your command below.
 ----------
 
+ls -l
 
 
 ==========
@@ -75,6 +83,7 @@ $ echo hello there
 Copy and paste the output below.
 ----------
 
+hello there
 
 
 
@@ -86,7 +95,7 @@ $ echo whoa
 Copy and paste the output below.
 ----------
 
-
+whoa
 
 ==========
 3. Type:
@@ -96,7 +105,9 @@ $ echo good mornin'
 Copy and paste the output below.
 ----------
 
-
+ echo good mornin'
+>
+>
 
 ==========
 4. Uh-oh... we're stuck!
@@ -104,6 +115,7 @@ Copy and paste the output below.
 Type [CTRL + C] to get your prompt back.
 ----------
 
+It cancles it out!
 
 
 ==========
@@ -114,6 +126,7 @@ $ echo "good mornin'"
 Copy and paste the output below.
 ----------
 
+good mornin'
 
 
 ==========
@@ -126,7 +139,7 @@ What happens?
 ----------
 
 
-
+AppData Application Data Contacts Cookies Creative Cloud Files Creative Cloud Files isaiahsantiago456@gmail.com 2319c1b5cc7f8f4891213122281b509527026653b69ea6b30cedd588228fd26c Desktop Documents Downloads Favorites Links Local Settings Music My Documents NTUSER.DAT NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TM.blf NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TMContainer00000000000000000001.regtrans-ms NTUSER.DAT{ace25e1b-933a-11ed-af13-a0294261e1a7}.TMContainer00000000000000000002.regtrans-ms NetHood OneDrive Pictures PrintHood Recent Saved Games Searches SendTo Start Menu Templates Videos ansel foo mtec1003 ntuser.dat.LOG1 ntuser.dat.LOG2 ntuser.ini
 
 ==========
 7. Ok... that's a lot of output.  How do we clean up our screen so that it's empty again?
@@ -134,7 +147,9 @@ What happens?
 Write the command that you used below:
 ----------
 
+clear
 
+Simple as that
 
 ==========
 Downloading files from a web site:  We'll use the following method to download more lab materials!
@@ -151,7 +166,9 @@ Now copy and paste the output below.
 
 
 
-
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 18567    0 18567    0     0   177k      0 --:--:-- --:--:-- --:--:--  181k
 
 
 
@@ -162,7 +179,7 @@ Write the command you used to determine your directory. Also, copy and paste the
 ----------
 
 
-
+pwd
 
 
 ==========
@@ -172,6 +189,7 @@ Write the command that you used to change to your home directory.
 If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
+cd ~
 
 
 ===========
